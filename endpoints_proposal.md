@@ -7,7 +7,7 @@ bill/{bill_id}
 
 bills/
 
-bills/status/{status}
+bills/result/{result}
 
 bills/votes/marginal/{difference}
 -	e.g. bills/votes/marginal/5
