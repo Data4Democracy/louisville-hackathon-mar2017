@@ -43,11 +43,11 @@ legislator/{id}/
 
 legislators/
 
-legislators/representatives/
+legislators/house/
 
-legislators/senators/
+legislators/senate/
 
-legislators/party/{party_id}
+legislators/party/{party}
 
 legislators/maxVotes/{vote}/{count}
 -	e.g. legislators/maxVotes/NV/10
