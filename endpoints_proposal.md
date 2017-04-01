@@ -36,6 +36,10 @@ legislator/{id}/bills/vote/{vote}/result/{result}
 -	e.g. legislator/5/votes/yay/result/passed
 -	Return Passed bills that legislator 5 voted yay on.
 
+bills/legislator/{id}/sponsored
+legislator/{id}/bills/sponsored
+-	Return bills sponsored or co-sponsored by legislator.
+
 
 Search legislators
 ------------------
@@ -62,6 +66,8 @@ bill/{bill_id}/legislators/vote/{vote}
 -	e.g. bill/3/legislators/vote/nay
 -	Return legislators who voted nay on Bill 3.
 
+legislator/{id}/cosponsors
+-	Returns legislators who have co-sponsored any bill with given legislator.
 
 Find votes
 ----------
