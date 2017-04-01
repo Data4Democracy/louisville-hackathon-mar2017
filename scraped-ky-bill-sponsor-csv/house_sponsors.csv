@@ -1,6 +1,7 @@
 bill,sponsors
 HB1,J. Hoover
 HB1,J. DeCesare
+HB1,R. Benvenuti III
 HB1,K. Bratcher
 HB1,J. Carney
 HB1,J. DuPlessis
@@ -17,6 +18,7 @@ HB1,P. Pratt
 HB1,B. Rowland
 HB1,S. Santoro
 HB1,J. Shell
+HB1,D. St. Onge
 HB1,W. Thomas
 HB1,S. Wells
 HB1,A. Wuchner
@@ -24,6 +26,7 @@ HB2,J. Hoover
 HB2,A. Wuchner
 HB2,L. Bechler
 HB2,D. Bentley
+HB2,R. Benvenuti III
 HB2,J. Blanton
 HB2,K. Bratcher
 HB2,J. Carney
@@ -38,6 +41,7 @@ HB2,DJ Johnson
 HB2,K. King
 HB2,A. Koenig
 HB2,S. Lee
+HB2,D. Meade
 HB2,R. Mills
 HB2,T. Moore
 HB2,K. Moser
@@ -46,6 +50,7 @@ HB2,M. Prunty
 HB2,B. Reed
 HB2,S. Santoro
 HB2,J. Shell
+HB2,D. St. Onge
 HB2,W. Thomas
 HB2,J. Tipton
 HB2,T. Turner
@@ -53,6 +58,7 @@ HB2,K. Upchurch
 HB2,J. York
 HB3,J. Hoover
 HB3,A. Koenig
+HB3,R. Benvenuti III
 HB3,K. Bratcher
 HB3,J. Carney
 HB3,J. DeCesare
@@ -61,12 +67,14 @@ HB3,T. Herald
 HB3,D. Johnson
 HB3,K. King
 HB3,S. Lee
+HB3,D. Meade
 HB3,J. Miller
 HB3,K. Moser
 HB3,D. Osborne
 HB3,P. Pratt
 HB3,S. Santoro
 HB3,J. Shell
+HB3,D. St. Onge
 HB3,W. Thomas
 HB3,A. Wuchner
 HB10,K. Bratcher
@@ -88,6 +96,7 @@ HB13,W. Stone
 HB13,W. Thomas
 HB14,K. Bratcher
 HB14,D. Bentley
+HB14,R. Benvenuti III
 HB14,J. Blanton
 HB14,R. Bunch
 HB14,T. Burch
@@ -102,7 +111,7 @@ HB14,D. Horlander
 HB14,K. Imes
 HB14,DJ Johnson
 HB14,K. King
-HB14,S. Lee
+HB14,S. LeeHB 16
 HB14,D. Mayfield
 HB14,M. Meredith
 HB14,R. Meyer
@@ -150,7 +159,7 @@ HB25,J. Miller
 HB26,A. Koenig
 HB26,M. Hart
 HB26,K. King
-HB27,NA
+HB27,J. Stewart III
 HB28,J. Wayne
 HB29,J. Donohue
 HB30,J. Donohue
@@ -277,8 +286,10 @@ HB65,M. Hart
 HB65,S. Miles
 HB66,M. Marzian
 HB67,J. Tipton
+HB67,R. Benevenuti III
 HB67,R. Heath
 HB67,R. Palumbo
+HB67,D. St. Onge
 HB67,S. Westrom
 HB68,G. Watkins
 HB68,J. Richards
@@ -329,7 +340,9 @@ HB90,G. Watkins
 HB90,J. Richards
 HB91,R. Meeks
 HB92,D. Owens
+HB93,D. St. Onge
 HB93,S. Santoro
+HB93,R. Benvenuti III
 HB94,D. Schamore
 HB95,D. Elliott
 HB95,A. Simpson
@@ -344,6 +357,7 @@ HB100,K. Moser
 HB100,J. Nemes
 HB100,D. Osborne
 HB100,S. Santoro
+HB100,D. St. Onge
 HB100,S. Westrom
 HB100,A. Wuchner
 HB101,D. Owens
@@ -375,9 +389,11 @@ HB112,S. Lee
 HB112,K. King
 HB112,C. Morgan
 HB112,B. Rowland
+HB112,D. St. Onge
 HB112,S. Westrom
 HB113,J. Richards
 HB113,S. Riggs
+HB113,R. Benvenuti III
 HB113,M. Hart
 HB113,C. Miller
 HB113,P. Pratt
@@ -387,7 +403,9 @@ HB115,J. Richards
 HB116,J. Richards
 HB117,J. Richards
 HB118,J. Richards
+HB119,S. Santoro
 HB119,M. Castlen
+HB119,R. Benvenuti III
 HB119,D. Hale
 HB119,S. Riggs
 HB119,S. Santoro
@@ -540,6 +558,7 @@ HB156,J. York
 HB157,NA
 HB158,K. Moser
 HB158,D. Bentley
+HB158,R. Benvenuti III
 HB158,J. Richards
 HB158,S. Westrom
 HB159,B. Rowland
@@ -558,6 +577,7 @@ HB161,D. Johnson
 HB161,T. Moore
 HB161,R. Palumbo
 HB161,M. Prunty
+HB161,D. St. Onge
 HB162,J. Carney
 HB162,M. Hart
 HB162,D. Horlander
@@ -648,6 +668,7 @@ HB174,R. Heath
 HB174,M. Castlen
 HB174,J. DeCesare
 HB174,M. Dossett
+HB174,J. Gooch Jr.
 HB174,D. Hale
 HB174,M. Hart
 HB174,K. King
@@ -712,6 +733,7 @@ HB184,S. Miles
 HB184,J. Petrie
 HB184,M. Castlen
 HB184,J. DeCesare
+HB184,J. Gooch Jr.
 HB184,DJ Johnson
 HB184,M. Meredith
 HB184,R. Mills
@@ -811,6 +833,7 @@ HB218,J. Richards
 HB219,NA
 HB220,NA
 HB221,K. King
+HB222,R. Benvenuti III
 HB222,J. Greer
 HB222,R. Mills
 HB222,B. Reed
@@ -828,6 +851,7 @@ HB227,C. McCoy
 HB227,K. Moser
 HB227,R. Palumbo
 HB227,S. Riggs
+HB227,D. St. Onge
 HB227,S. Westrom
 HB227,A. Wuchner
 HB228,J. DeCesare
@@ -839,6 +863,7 @@ HB231,B. Rowland
 HB232,T. Moore
 HB232,S. Westrom
 HB233,S. Wells
+HB234,J. Gooch Jr.
 HB234,J. Blanton
 HB234,S. Miles
 HB234,R. Mills
@@ -855,10 +880,12 @@ HB237,K. King
 HB237,M. Meredith
 HB237,J. Nemes
 HB237,B. Reed
+HB237,J. Sims Jr
 HB237,W. Thomas
 HB237,J. Tipton
 HB238,P. Pratt
 HB238,M. Hart
+HB238,G. Brown Jr
 HB238,R. Palumbo
 HB238,J. Richards
 HB239,W. Thomas
@@ -872,6 +899,7 @@ HB239,M. Prunty
 HB239,B. Reed
 HB239,R. Rothenburger
 HB239,S. Santoro
+HB239,J. Sims Jr
 HB239,S. Wells
 HB240,A. Gentry
 HB240,M. Cantrell
@@ -888,8 +916,8 @@ HB245,J. Miller
 HB246,J. Miller
 HB246,S. Riggs
 HB246,K. Bratcher
+HB246,K. Fleming
 HB246,P. Moffett
-HB247,K. Moser
 HB247,A. Wuchner
 HB247,J. Richards
 HB247,S. Westrom
@@ -1260,6 +1288,7 @@ HB366,DJ Johnson
 HB367,R. Palumbo
 HB367,J. Carney
 HB367,J. DeCesare
+HB368,D. St. Onge
 HB368,A. Simpson
 HB369,NA
 HB370,L. Bechler
@@ -1270,6 +1299,7 @@ HB370,S. Wells
 HB371,J. Jenkins
 HB372,D. Hale
 HB373,J. Miller
+HB374,R. Benvenuti III
 HB374,C. Morgan
 HB374,M. Prunty
 HB375,W. Thomas
@@ -1283,6 +1313,7 @@ HB380,P. Pratt
 HB381,J. Kay
 HB382,J. Kay
 HB383,R. Nelson
+HB384,R. Benvenuti III
 HB384,M. Prunty
 HB385,NA
 HB386,J. Kay
@@ -1587,4 +1618,4 @@ HB536,D. Osborne
 HB537,P. Moffett
 HB538,K. Sinnette
 HB539,B. Linder
-HB540,NA
+HB540,D. St. Onge
