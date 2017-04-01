@@ -17,7 +17,7 @@ dbGetQuery(con, 'select * from ky_ga_bill_votes')
                   sep = ';')
   votes <- gather(HouseVotes, key=Name)
   names(votes) <- c('MemberName', 'BillName', 'Vote')
-  dbWriteTable(con, name='votes', value=votes);
+  dbWriteTable(con, name='votes', value=votes, overwrite = TRUE);
 
   # Process Legislators
   Legislators <- read.csv(url('https://raw.githubusercontent.com/Data4Democracy/louisville-hackathon-mar2017/master/Legislators.csv'), encoding='UTF-8')
