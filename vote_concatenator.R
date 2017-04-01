@@ -41,6 +41,8 @@ House_Votes <- left_join(d1, d11) %>%
 
 House_Votes <- House_Votes[,!grepl("\\_1$", colnames(House_Votes))] #remove duplicates
 
+House_Votes <- House_Votes[,!grepl("\\_1$", colnames(House_Votes))] #remove duplicates
+
 Senate_Votes <- left_join(d10, d12) %>% 
   left_join(d13) %>% 
   left_join(d2) %>% 

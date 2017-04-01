@@ -1,139 +1,139 @@
-﻿ID,FirstName,LastName,District,Full Name,Party,Race,Gender,First Elected,DOB,Initial Name
-1,Julie Raque,Adams,S36,Julie Raque Adams,Republican,White,Female,2015,,J. Adams
-2,Rocky,Adkins,H99,Rocky Adkins,Democratic,White,Male,1987,,R. Adkins
-3,Ralph,Alvarado,S28,Ralph Alvarado,Republican,White,Male,2015,4/30/1970,R. Alvarado
-4,Lynn,Bechler,H4,Lynn Bechler,Republican,White,Male,2013,,L. Bechler
-5,Danny,Bentley,H98,Danny Bentley,Republican,White,Male,2017,,D. Bentley
-6,Robert,Benvenuti,H88,Robert J. Benvenuti III,Republican,White,Male,2013,,R. Benvenuti
-7,John,Blanton,H92,John Blanton,Republican,White,Male,2017,,J. Blanton
-8,Joe,Bowen,S8,Joe Bowen,Republican,White,Male,2011,4/22/1950,J. Bowen
-9,Kevin,Bratcher,H29,Kevin Bratcher,Republican,White,Male,1997,1961,K. Bratcher
-10,George,Brown,H77,George A. Brown Jr.,Democratic,Black,Male,2015,,G. Brown
-11,Larry,Brown,H95,Larry Brown,Republican,White,Male,2017,1956,L. Brown
-12,Tom,Buford,S22,Tom Buford,Republican,White,Male,1991,1949,T. Buford
-13,Regina,Bunch,H82,Regina Bunch,Republican,White,Female,2012,,R. Bunch
-14,Thomas,Burch,H30,Thomas Burch,Democratic,White,Male,1978,1931,T. Burch
-15,McKenzie,Cantrell,H38,McKenzie Cantrell,Democratic,White,Female,2017,,M. Cantrell
-16,John,Carney,H51,John Carney,Republican,White,Male,2009,,J. Carney
-17,Jared,Carpenter,S34,Jared Carpenter,Republican,White,Male,2011,,J. Carpenter
-18,Danny,Carroll,S2,Danny Carroll,Republican,White,Male,2015,,D. Carroll
-19,Julian M.,Carroll,S7,Julian M. Carroll,Democratic,White,Male,2005,4/16/1931,J. Carroll
-20,Matt,Castlen,H14,Matt Castlen,Republican,White,Male,2017,1986,M. Castlen
-21,Perry B.,Clark,S37,Perry B. Clark,Democratic,White,Male,2006,9/30/1957,P. Clark
-22,Tim,Couch,H90,Tim Couch,Republican,White,Male,2003,,T. Couch
-23,Will,Coursey,H6,Will Coursey,Democratic,White,Male,2008,,W. Coursey
-24,Jim,DeCesare,H17,Jim DeCesare,Republican,White,Male,2005,,J. DeCesare
-25,Jeffery,Donohue,H37,Jeffery M. Donohue,Democratic,White,Male,2013,,J. Donohue
-26,Myron,Dossett,H9,Myron Dossett,Republican,White,Male,2007,,M. Dossett
-27,Jim,DuPlessis,H25,Jim DuPlessis,Republican,White,Male,2015,,J. DuPlessis
-28,Daniel,Elliott,H54,Daniel Elliott,Republican,White,Male,2016,,D. Elliott
-29,C.B.,Embry Jr.,S6,C.B. Embry Jr.,Republican,White,Male,2003,1941,C. Embry Jr.
-30,Joseph,Fischer,H68,Joseph Fischer,Republican,White,Male,1999,,J. Fischer
-31,Ken,Fleming,H48,Ken Fleming,Republican,White,Male,2017,,K. Fleming
-32,Kelly,Flood,H75,Kelly Flood,Democratic,White,Female,2009,,K. Flood
-33,Chris,Fugate,H84,Chris Fugate,Republican,White,Male,2017,1969,C. Fugate
-34,Alan,Gentry,H46,Alan Gentry,Democratic,White,Male,2017,1964,A. Gentry
-35,Rick,Girdler,S15,Rick Girdler,Republican,White,Male,2017,5/23/1955,R. Girdler
-36,David P.,Givens,S9,David P. Givens,Republican,White,Male,2009,1966,D. Givens
-37,Jim,Gooch,H12,"Jim Gooch, Jr.",Republican,White,Male,1995,,J. Gooch
-38,Derrick,Graham,H57,Derrick Graham,Democratic,Black,Male,2003,,D. Graham
-39,Jeff,Greer,H27,Jeff Greer,Democratic,White,Male,2007,,J. Greer
-40,David,Hale,H74,David Hale,Republican,White,Male,2015,,D. Hale
-41,Denise,Harper Angel,S35,Denise Harper Angel,Democratic,White,Female,2005,,D. Harper Angel
-42,Chris,Harris,H93,Chris Harris,Democratic,White,Male,2015,,C. Harris
-43,Ernie,Harris,S26,Ernie Harris,Republican,White,Male,1995,12/23/1947,E. Harris
-44,Mark,Hart,H78,Mark Hart,Republican,White,Male,2017,1968,M. Hart
-45,Angie,Hatton,H94,Angie Hatton,Democratic,White,Female,2017,1972,A. Hatton
-46,Richard,Heath,H2,Richard Heath,Republican,White,Male,2012,,R. Heath
-47,Toby,Herald,H91,Toby Herald,Republican,White,Male,2017,1953,T. Herald
-48,Jimmy,Higdon,S14,Jimmy Higdon,Republican,White,Male,2009,1953,J. Higdon
-49,Jeffrey,Hoover,H83,Jeffrey Hoover,Republican,White,Male,1997,,J. Hoover
-50,Dennis,Horlander,H40,Dennis Horlander,Democratic,White,Male,1996,,D. Horlander
-51,Paul,Hornback,S20,Paul Hornback,Republican,White,Male,2011,,P. Hornback
-52,Stan,Humphries,S1,Stan Humphries,Republican,White,Male,2013,8/2/1969,S. Humphries
-53,Kenny,Imes,H5,Kenny Imes,Republican,White,Male,2013,,K. Imes
-54,Joni,Jenkins,H44,Joni Jenkins,Democratic,White,Female,1995,,J. Jenkins
-55,D.J.,Johnson,H13,D.J. Johnson,Republican,White,Male,2017,1957,D. Johnson
-56,Dan,Johnson,H49,Dan Johnson,Republican,White,Male,2017,1960,D. Johnson
-57,Ray S.,Jones II,S31,Ray S. Jones II,Democratic,White,Male,2001,10/6/1969,R. Jones II
-58,James,Kay,H56,James L. Kay II,Democratic,White,Male,2013,,J. Kay
-59,Dennis,Keene,H67,Dennis Keene,Democratic,White,Male,2005,,D. Keene
-60,Alice Forgy,Kerr,S12,Alice Forgy Kerr,Republican,White,Female,1999,1954,A. Kerr
-61,Kim,King,H55,Kim King,Republican,White,Female,2011,,K. King
-62,Adam,Koenig,H69,Adam Koenig,Republican,White,Male,2007,,A. Koenig
-63,Stan,Lee,H45,Stan Lee,Republican,White,Male,2001,,S. Lee
-64,Brian,Linder,H61,Brian E. Linder,Republican,White,Male,2013,,B. Linder
-65,Mary,Marzian,H34,Mary Marzian,Democratic,White,Female,1994,,M. Marzian
-66,Donna,Mayfield,H73,Donna Mayfield,Republican,White,Female,2011,,D. Mayfield
-67,Chad,McCoy,H50,Chad McCoy,Republican,White,Male,2017,1970,C. McCoy
-68,Christian,McDaniel,S23,Christian McDaniel,Republican,White,Male,2013,7/19/1977,C. McDaniel
-69,Morgan,McGarvey,S19,Morgan McGarvey,Democratic,White,Male,2012,,M. McGarvey
-70,David,Meade,H80,David Meade,Republican,White,Male,2013,,D. Meade
-71,Reginald,Meeks,H42,Reginald Meeks,Democratic,Black,Male,2001,,R. Meeks
-72,Michael,Meredith,H19,Michael Meredith,Republican,White,Male,2011,,M. Meredith
-73,Stephen,Meredith,S5,Stephen Meredith,Republican,White,Male,2017,6/21/1953,S. Meredith
-74,Russ,Meyer,H39,Russ Meyer,Democratic,White,Male,2015,,R. Meyer
-75,Suzanne,Miles,H7,Suzanne Miles,Republican,White,Female,2014,,S. Miles
-76,Charles,Miller,H28,Charles Miller,Democratic,White,Male,1998,,C. Miller
-77,Jerry,Miller,H36,Jerry T. Miller,Republican,White,Male,2015,,J. Miller
-78,Robby,Mills,H11,Robby Mills,Republican,White,Male,2017,,R. Mills
-79,Phil,Moffett,H32,Phil Moffett,Republican,White,Male,2015,,P. Moffett
-80,Tim,Moore,H18,Tim Moore,Republican,White,Male,2007,,T. Moore
-81,C. Wesley,Morgan,H81,C. Wesley Morgan,Republican,White,Male,2017,,C. Morgan
-82,Kimberly,Moser,H64,Kimberly Moser,Republican,White,Female,2017,,K. Moser
-83,Gerald A.,Neal,S33,Gerald A. Neal,Democratic,Black,Male,1989,9/22/1945,G. Neal
-84,Rick,Nelson,H87,Rick Nelson,Democratic,White,Male,2001,,R. Nelson
-85,Jason,Nemes,H33,Jason Nemes,Republican,White,Male,2017,,J. Nemes
-86,David,Osborne,H59,David Osborne,Republican,White,Male,2005,,D. Osborne
-87,Sannie,Overly,H72,Sannie Overly,Democratic,White,Female,2008,1966,S. Overly
-88,Darryl,Owens,H43,Darryl Owens,Democratic,Black,Male,2005,,D. Owens
-89,Ruth,Palumbo,H76,Ruth Palumbo,Democratic,White,Female,1991,,R. Palumbo
-90,Dennis,Parrett,S10,Dennis Parrett,Democratic,White,Male,2011,10/30/1959,D. Parrett
-91,Jason,Petrie,H16,Jason Petrie,Republican,White,Male,2017,1971,J. Petrie
-92,Phillip,Pratt,H62,Phillip Pratt,Republican,White,Male,2017,,P. Pratt
-93,Melinda,Prunty,H15,Melinda Prunty,Republican,White,Female,2017,1957,M. Prunty
-94,Marie,Rader,H89,Marie Rader,Republican,White,Female,1997,,M. Rader
-95,Rick,Rand,H47,Rick Rand,Democratic,White,Male,2003,,R. Rand
-96,William,Reed,H24,William Reed,Republican,White,Male,2017,1980,W. Reed
-97,Jody,Richards,H20,Jody Richards,Democratic,White,Male,1976,,J. Richards
-98,Dorsey,Ridley,S4,Dorsey Ridley,Democratic,White,Male,2004,1957,D. Ridley
-99,Steven,Riggs,H31,Steven Riggs,Democratic,White,Male,1991,,S. Riggs
-100,Steve,Riley,H23,Steve Riley,Republican,White,Male,2017,1958,S. Riley
-101,Albert,Robinson,S21,Albert Robinson,Republican,White,Male,2013,12/19/1938,A. Robinson
-102,Rob,Rothenburger,H58,Rob Rothenburger,Republican,White,Male,2017,,R. Rothenburger
-103,Bart,Rowland,H21,Bart Rowland,Republican,White,Male,2012,,B. Rowland
-104,Steven,Rudy,H1,Steven Rudy,Republican,White,Male,2005,,S. Rudy
-105,Sal,Santoro,H60,Sal Santoro,Republican,White,Male,2007,,S. Santoro
-106,Dean,Schamore,H10,Dean Schamore,Democratic,White,Male,2015,,D. Schamore
-107,John,Schickel,S11,John Schickel,Republican,White,Male,2009,3/29/1954,J. Schickel
-108,Wil,Schroder,S24,Wil Schroder,Republican,White,Male,2015,6/29/1982,W. Schroder
-109,Attica,Scott,H41,Attica Scott,Democratic,Black,Female,2017,,A. Scott
-110,Dan,Seum,S38,Dan Seum,Republican,White,Male,1995,1/28/1940,D. Seum
-111,Jonathan,Shell,H71,Jonathan Shell,Republican,White,Male,2013,,J. Shell
-112,Arnold,Simpson,H65,Arnold Simpson,Democratic,Black,Male,1994,,A. Simpson
-113,John,Sims,H70,John Sims Jr.,Democratic,White,Male,2007,1978,J. Sims
-114,Kevin,Sinnette,H100,Kevin Sinnette,Democratic,White,Male,2009,,K. Sinnette
-115,Brandon,Smith,S30,Brandon Smith,Republican,White,Male,2008,6/14/1967,B. Smith
-116,Diane,St. Onge,H63,Diane St. Onge,Republican,White,Female,2013,,D. St. Onge
-117,Jim,Stewart,H86,"Jim Stewart, III",Republican,White,Male,1997,,J. Stewart
-118,Robert,Stivers II,S25,Robert Stivers II,Republican,White,Male,1997,12/24/1961,R. Stivers II
-119,Wilson,Stone,H22,Wilson Stone,Democratic,White,Male,2009,,W. Stone
-120,Damon,Thayer,S17,Damon Thayer,Republican,White,Male,2003,,D. Thayer
-121,Reginald,Thomas,S13,Reginald Thomas,Democratic,Black,Male,2014,5/20/1953,R. Thomas
-122,Walker,Thomas,H8,Walker Thomas,Republican,White,Male,2017,,W. Thomas
-123,James,Tipton,H53,James A. Tipton,Republican,White,Male,2015,,J. Tipton
-124,Johnny Ray,Turner,S29,Johnny Ray Turner,Democratic,White,Male,2001,12/19/1949,J. Turner
-125,Thomas,Turner,H85,Thomas Turner,Republican,White,Male,1997,,T. Turner
-126,Ken,Upchurch,H52,Ken Upchurch,Republican,White,Male,1999,,K. Upchurch
-127,Gerald,Watkins,H3,Gerald Watkins,Democratic,White,Male,2013,,G. Watkins
-128,Jim,Wayne,H35,Jim Wayne,Democratic,White,Male,1991,,J. Wayne
-129,Robin L.,Webb,S18,Robin L. Webb,Democratic,White,Female,2009,9/6/1960,R. Webb
-130,Russell,Webber,H26,Russell Webber,Republican,White,Male,2013,,R. Webber
-131,William,Wells,H97,William Wells,Republican,White,Male,2017,,W. Wells
-132,Stephen,West,S27,Stephen West,Republican,White,Male,2015,4/28/1970,S. West
-133,Whitney,Westerfield,S3,Whitney Westerfield,Republican,White,Male,2013,11/29/1980,W. Westerfield
-134,Susan,Westrom,H79,Susan Westrom,Democratic,White,Female,1999,,S. Westrom
-135,Mike,Wilson,S32,Mike Wilson,Republican,White,Male,2011,12/4/1951,M. Wilson
-136,Max,Wise,S16,Max Wise,Republican,White,Male,2015,6/28/1975,M. Wise
-137,Addia,Wuchner,H66,Addia Wuchner,Republican,White,Female,2005,,A. Wuchner
-138,Jill,York,H96,Jill York,Republican,White,Female,2009,,J. York
+ID,FirstName,LastName,District,Full Name,Party,Race,Gender,First Elected,DOB,Initial Name,LastUnique
+1,Julie Raque,Adams,S36,Julie Raque Adams,Republican,White,Female,2015,,J. Adams,Adams
+2,Rocky,Adkins,H99,Rocky Adkins,Democratic,White,Male,1987,,R. Adkins,Adkins
+3,Ralph,Alvarado,S28,Ralph Alvarado,Republican,White,Male,2015,4/30/1970,R. Alvarado,Alvarado
+4,Lynn,Bechler,H4,Lynn Bechler,Republican,White,Male,2013,,L. Bechler,Bechler
+5,Danny,Bentley,H98,Danny Bentley,Republican,White,Male,2017,,D. Bentley,Bentley
+6,Robert,Benvenuti,H88,Robert J. Benvenuti III,Republican,White,Male,2013,,R. Benvenuti,Benvenuti
+7,John,Blanton,H92,John Blanton,Republican,White,Male,2017,,J. Blanton,Blanton
+8,Joe,Bowen,S8,Joe Bowen,Republican,White,Male,2011,4/22/1950,J. Bowen,Bowen
+9,Kevin,Bratcher,H29,Kevin Bratcher,Republican,White,Male,1997,1961,K. Bratcher,Bratcher
+10,George,Brown,H77,George A. Brown Jr.,Democratic,Black,Male,2015,,G. Brown,Brown G
+11,Larry,Brown,H95,Larry Brown,Republican,White,Male,2017,1956,L. Brown,Brown L
+12,Tom,Buford,S22,Tom Buford,Republican,White,Male,1991,1949,T. Buford,Buford
+13,Regina,Bunch,H82,Regina Bunch,Republican,White,Female,2012,,R. Bunch,Bunch
+14,Thomas,Burch,H30,Thomas Burch,Democratic,White,Male,1978,1931,T. Burch,Burch
+15,McKenzie,Cantrell,H38,McKenzie Cantrell,Democratic,White,Female,2017,,M. Cantrell,Cantrell
+16,John,Carney,H51,John Carney,Republican,White,Male,2009,,J. Carney,Carney
+17,Jared,Carpenter,S34,Jared Carpenter,Republican,White,Male,2011,,J. Carpenter,Carpenter
+18,Danny,Carroll,S2,Danny Carroll,Republican,White,Male,2015,,D. Carroll,Carroll D
+19,Julian M.,Carroll,S7,Julian M. Carroll,Democratic,White,Male,2005,4/16/1931,J. Carroll,Carroll J
+20,Matt,Castlen,H14,Matt Castlen,Republican,White,Male,2017,1986,M. Castlen,Castlen
+21,Perry B.,Clark,S37,Perry B. Clark,Democratic,White,Male,2006,9/30/1957,P. Clark,Clark
+22,Tim,Couch,H90,Tim Couch,Republican,White,Male,2003,,T. Couch,Couch
+23,Will,Coursey,H6,Will Coursey,Democratic,White,Male,2008,,W. Coursey,Coursey
+24,Jim,DeCesare,H17,Jim DeCesare,Republican,White,Male,2005,,J. DeCesare,DeCesare
+25,Jeffery,Donohue,H37,Jeffery M. Donohue,Democratic,White,Male,2013,,J. Donohue,Donohue
+26,Myron,Dossett,H9,Myron Dossett,Republican,White,Male,2007,,M. Dossett,Dossett
+27,Jim,DuPlessis,H25,Jim DuPlessis,Republican,White,Male,2015,,J. DuPlessis,DuPlessis
+28,Daniel,Elliott,H54,Daniel Elliott,Republican,White,Male,2016,,D. Elliott,Elliott
+29,C.B.,Embry Jr.,S6,C.B. Embry Jr.,Republican,White,Male,2003,1941,C. Embry Jr.,Embry Jr.
+30,Joseph,Fischer,H68,Joseph Fischer,Republican,White,Male,1999,,J. Fischer,Fischer
+31,Ken,Fleming,H48,Ken Fleming,Republican,White,Male,2017,,K. Fleming,Fleming
+32,Kelly,Flood,H75,Kelly Flood,Democratic,White,Female,2009,,K. Flood,Flood
+33,Chris,Fugate,H84,Chris Fugate,Republican,White,Male,2017,1969,C. Fugate,Fugate
+34,Alan,Gentry,H46,Alan Gentry,Democratic,White,Male,2017,1964,A. Gentry,Gentry
+35,Rick,Girdler,S15,Rick Girdler,Republican,White,Male,2017,5/23/1955,R. Girdler,Girdler
+36,David P.,Givens,S9,David P. Givens,Republican,White,Male,2009,1966,D. Givens,Givens
+37,Jim,Gooch,H12,"Jim Gooch, Jr.",Republican,White,Male,1995,,J. Gooch,Gooch
+38,Derrick,Graham,H57,Derrick Graham,Democratic,Black,Male,2003,,D. Graham,Graham
+39,Jeff,Greer,H27,Jeff Greer,Democratic,White,Male,2007,,J. Greer,Greer
+40,David,Hale,H74,David Hale,Republican,White,Male,2015,,D. Hale,Hale
+41,Denise,Harper Angel,S35,Denise Harper Angel,Democratic,White,Female,2005,,D. Harper Angel,Harper Angel
+42,Chris,Harris,H93,Chris Harris,Democratic,White,Male,2015,,C. Harris,Harris C
+43,Ernie,Harris,S26,Ernie Harris,Republican,White,Male,1995,12/23/1947,E. Harris,Harris E
+44,Mark,Hart,H78,Mark Hart,Republican,White,Male,2017,1968,M. Hart,Hart
+45,Angie,Hatton,H94,Angie Hatton,Democratic,White,Female,2017,1972,A. Hatton,Hatton
+46,Richard,Heath,H2,Richard Heath,Republican,White,Male,2012,,R. Heath,Heath
+47,Toby,Herald,H91,Toby Herald,Republican,White,Male,2017,1953,T. Herald,Herald
+48,Jimmy,Higdon,S14,Jimmy Higdon,Republican,White,Male,2009,1953,J. Higdon,Higdon
+49,Jeffrey,Hoover,H83,Jeffrey Hoover,Republican,White,Male,1997,,J. Hoover,Hoover
+50,Dennis,Horlander,H40,Dennis Horlander,Democratic,White,Male,1996,,D. Horlander,Horlander
+51,Paul,Hornback,S20,Paul Hornback,Republican,White,Male,2011,,P. Hornback,Hornback
+52,Stan,Humphries,S1,Stan Humphries,Republican,White,Male,2013,8/2/1969,S. Humphries,Humphries
+53,Kenny,Imes,H5,Kenny Imes,Republican,White,Male,2013,,K. Imes,Imes
+54,Joni,Jenkins,H44,Joni Jenkins,Democratic,White,Female,1995,,J. Jenkins,Jenkins
+55,D.J.,Johnson,H13,D.J. Johnson,Republican,White,Male,2017,1957,D. Johnson,Johnson DJ
+56,Dan,Johnson,H49,Dan Johnson,Republican,White,Male,2017,1960,D. Johnson,Johnson D
+57,Ray S.,Jones II,S31,Ray S. Jones II,Democratic,White,Male,2001,10/6/1969,R. Jones II,Jones II
+58,James,Kay,H56,James L. Kay II,Democratic,White,Male,2013,,J. Kay,Kay
+59,Dennis,Keene,H67,Dennis Keene,Democratic,White,Male,2005,,D. Keene,Keene
+60,Alice Forgy,Kerr,S12,Alice Forgy Kerr,Republican,White,Female,1999,1954,A. Kerr,Kerr
+61,Kim,King,H55,Kim King,Republican,White,Female,2011,,K. King,King
+62,Adam,Koenig,H69,Adam Koenig,Republican,White,Male,2007,,A. Koenig,Koenig
+63,Stan,Lee,H45,Stan Lee,Republican,White,Male,2001,,S. Lee,Lee
+64,Brian,Linder,H61,Brian E. Linder,Republican,White,Male,2013,,B. Linder,Linder
+65,Mary,Marzian,H34,Mary Marzian,Democratic,White,Female,1994,,M. Marzian,Marzian
+66,Donna,Mayfield,H73,Donna Mayfield,Republican,White,Female,2011,,D. Mayfield,Mayfield
+67,Chad,McCoy,H50,Chad McCoy,Republican,White,Male,2017,1970,C. McCoy,McCoy
+68,Christian,McDaniel,S23,Christian McDaniel,Republican,White,Male,2013,7/19/1977,C. McDaniel,McDaniel
+69,Morgan,McGarvey,S19,Morgan McGarvey,Democratic,White,Male,2012,,M. McGarvey,McGarvey
+70,David,Meade,H80,David Meade,Republican,White,Male,2013,,D. Meade,Meade
+71,Reginald,Meeks,H42,Reginald Meeks,Democratic,Black,Male,2001,,R. Meeks,Meeks
+72,Michael,Meredith,H19,Michael Meredith,Republican,White,Male,2011,,M. Meredith,Meredith M
+73,Stephen,Meredith,S5,Stephen Meredith,Republican,White,Male,2017,6/21/1953,S. Meredith,Meredith S
+74,Russ,Meyer,H39,Russ Meyer,Democratic,White,Male,2015,,R. Meyer,Meyer
+75,Suzanne,Miles,H7,Suzanne Miles,Republican,White,Female,2014,,S. Miles,Miles
+76,Charles,Miller,H28,Charles Miller,Democratic,White,Male,1998,,C. Miller,Miller C
+77,Jerry,Miller,H36,Jerry T. Miller,Republican,White,Male,2015,,J. Miller,Miller J
+78,Robby,Mills,H11,Robby Mills,Republican,White,Male,2017,,R. Mills,Mills
+79,Phil,Moffett,H32,Phil Moffett,Republican,White,Male,2015,,P. Moffett,Moffett
+80,Tim,Moore,H18,Tim Moore,Republican,White,Male,2007,,T. Moore,Moore
+81,C. Wesley,Morgan,H81,C. Wesley Morgan,Republican,White,Male,2017,,C. Morgan,Morgan
+82,Kimberly,Moser,H64,Kimberly Moser,Republican,White,Female,2017,,K. Moser,Moser
+83,Gerald A.,Neal,S33,Gerald A. Neal,Democratic,Black,Male,1989,9/22/1945,G. Neal,Neal
+84,Rick,Nelson,H87,Rick Nelson,Democratic,White,Male,2001,,R. Nelson,Nelson
+85,Jason,Nemes,H33,Jason Nemes,Republican,White,Male,2017,,J. Nemes,Nemes
+86,David,Osborne,H59,David Osborne,Republican,White,Male,2005,,D. Osborne,Osborne
+87,Sannie,Overly,H72,Sannie Overly,Democratic,White,Female,2008,1966,S. Overly,Overly
+88,Darryl,Owens,H43,Darryl Owens,Democratic,Black,Male,2005,,D. Owens,Owens
+89,Ruth,Palumbo,H76,Ruth Palumbo,Democratic,White,Female,1991,,R. Palumbo,Palumbo
+90,Dennis,Parrett,S10,Dennis Parrett,Democratic,White,Male,2011,10/30/1959,D. Parrett,Parrett
+91,Jason,Petrie,H16,Jason Petrie,Republican,White,Male,2017,1971,J. Petrie,Petrie
+92,Phillip,Pratt,H62,Phillip Pratt,Republican,White,Male,2017,,P. Pratt,Pratt
+93,Melinda,Prunty,H15,Melinda Prunty,Republican,White,Female,2017,1957,M. Prunty,Prunty
+94,Marie,Rader,H89,Marie Rader,Republican,White,Female,1997,,M. Rader,Rader
+95,Rick,Rand,H47,Rick Rand,Democratic,White,Male,2003,,R. Rand,Rand
+96,William,Reed,H24,William Reed,Republican,White,Male,2017,1980,W. Reed,Reed
+97,Jody,Richards,H20,Jody Richards,Democratic,White,Male,1976,,J. Richards,Richards
+98,Dorsey,Ridley,S4,Dorsey Ridley,Democratic,White,Male,2004,1957,D. Ridley,Ridley
+99,Steven,Riggs,H31,Steven Riggs,Democratic,White,Male,1991,,S. Riggs,Riggs
+100,Steve,Riley,H23,Steve Riley,Republican,White,Male,2017,1958,S. Riley,Riley
+101,Albert,Robinson,S21,Albert Robinson,Republican,White,Male,2013,12/19/1938,A. Robinson,Robinson
+102,Rob,Rothenburger,H58,Rob Rothenburger,Republican,White,Male,2017,,R. Rothenburger,Rothenburger
+103,Bart,Rowland,H21,Bart Rowland,Republican,White,Male,2012,,B. Rowland,Rowland
+104,Steven,Rudy,H1,Steven Rudy,Republican,White,Male,2005,,S. Rudy,Rudy
+105,Sal,Santoro,H60,Sal Santoro,Republican,White,Male,2007,,S. Santoro,Santoro
+106,Dean,Schamore,H10,Dean Schamore,Democratic,White,Male,2015,,D. Schamore,Schamore
+107,John,Schickel,S11,John Schickel,Republican,White,Male,2009,3/29/1954,J. Schickel,Schickel
+108,Wil,Schroder,S24,Wil Schroder,Republican,White,Male,2015,6/29/1982,W. Schroder,Schroder
+109,Attica,Scott,H41,Attica Scott,Democratic,Black,Female,2017,,A. Scott,Scott
+110,Dan,Seum,S38,Dan Seum,Republican,White,Male,1995,1/28/1940,D. Seum,Seum
+111,Jonathan,Shell,H71,Jonathan Shell,Republican,White,Male,2013,,J. Shell,Shell
+112,Arnold,Simpson,H65,Arnold Simpson,Democratic,Black,Male,1994,,A. Simpson,Simpson
+113,John,Sims,H70,John Sims Jr.,Democratic,White,Male,2007,1978,J. Sims,Sims
+114,Kevin,Sinnette,H100,Kevin Sinnette,Democratic,White,Male,2009,,K. Sinnette,Sinnette
+115,Brandon,Smith,S30,Brandon Smith,Republican,White,Male,2008,6/14/1967,B. Smith,Smith
+116,Diane,St. Onge,H63,Diane St. Onge,Republican,White,Female,2013,,D. St. Onge,St. Onge
+117,Jim,Stewart,H86,"Jim Stewart, III",Republican,White,Male,1997,,J. Stewart,Stewart
+118,Robert,Stivers II,S25,Robert Stivers II,Republican,White,Male,1997,12/24/1961,R. Stivers II,Stivers II
+119,Wilson,Stone,H22,Wilson Stone,Democratic,White,Male,2009,,W. Stone,Stone
+120,Damon,Thayer,S17,Damon Thayer,Republican,White,Male,2003,,D. Thayer,Thayer
+121,Reginald,Thomas,S13,Reginald Thomas,Democratic,Black,Male,2014,5/20/1953,R. Thomas,Thomas R
+122,Walker,Thomas,H8,Walker Thomas,Republican,White,Male,2017,,W. Thomas,Thomas W
+123,James,Tipton,H53,James A. Tipton,Republican,White,Male,2015,,J. Tipton,Tipton
+124,Johnny Ray,Turner,S29,Johnny Ray Turner,Democratic,White,Male,2001,12/19/1949,J. Turner,Turner J
+125,Thomas,Turner,H85,Thomas Turner,Republican,White,Male,1997,,T. Turner,Turner T
+126,Ken,Upchurch,H52,Ken Upchurch,Republican,White,Male,1999,,K. Upchurch,Upchurch
+127,Gerald,Watkins,H3,Gerald Watkins,Democratic,White,Male,2013,,G. Watkins,Watkins
+128,Jim,Wayne,H35,Jim Wayne,Democratic,White,Male,1991,,J. Wayne,Wayne
+129,Robin L.,Webb,S18,Robin L. Webb,Democratic,White,Female,2009,9/6/1960,R. Webb,Webb
+130,Russell,Webber,H26,Russell Webber,Republican,White,Male,2013,,R. Webber,Webber
+131,William,Wells,H97,William Wells,Republican,White,Male,2017,,W. Wells,Wells
+132,Stephen,West,S27,Stephen West,Republican,White,Male,2015,4/28/1970,S. West,West
+133,Whitney,Westerfield,S3,Whitney Westerfield,Republican,White,Male,2013,11/29/1980,W. Westerfield,Westerfield
+134,Susan,Westrom,H79,Susan Westrom,Democratic,White,Female,1999,,S. Westrom,Westrom
+135,Mike,Wilson,S32,Mike Wilson,Republican,White,Male,2011,12/4/1951,M. Wilson,Wilson
+136,Max,Wise,S16,Max Wise,Republican,White,Male,2015,6/28/1975,M. Wise,Wise
+137,Addia,Wuchner,H66,Addia Wuchner,Republican,White,Female,2005,,A. Wuchner,Wuchner
+138,Jill,York,H96,Jill York,Republican,White,Female,2009,,J. York,York
