@@ -14,3 +14,11 @@ create table Members (
     DateOfBirth varchar(100) null
 );
 
+
+
+
+# 
+# Grant privileges!
+#
+
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO iheartuser;
