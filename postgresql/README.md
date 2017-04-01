@@ -9,3 +9,7 @@ user:  iheartuser
 password:  data4lou
 
 For changes go to @chipmonkey or @thelilacllama for now.
+
+NOTES:  Tables are created from R using RPostgreSQL.
+This causes some caveats:
+  Table and column names must usually be quoted:  select "Full.Names" from "Legislators";
