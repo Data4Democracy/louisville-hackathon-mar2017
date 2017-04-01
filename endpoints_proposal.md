@@ -7,14 +7,7 @@ bills/
 
 bills/status/{status}
 
-bill/{number}
--	Return bill name, status, general info
-
-bill/{number}/house
--	Return votes info in house
-
-bill/{number}/senate
--	Return votes info in senate
+bill/{bill_id}
 
 Legislators (by number)
 -----------------------
@@ -56,3 +49,21 @@ bills/maxVotes/{vote}/{count}
 bills/minVotes/{vote}/{count}
 -	e.g. bills/minVotes/nay/10
 -	Return bills with at least 10 nays
+
+Find votes
+----------
+vote/bill/{bill_id}
+-	Return all votes (in House and Senate) for a bill.
+
+vote/legislator/{legislator_id}
+-	Return all votes on any bills for a legislator.
+
+vote/legislator/{legislator_id}/bill/{bill_id}
+-	Return vote on specific bill and legistator.
+
+vote/bill/{bill_id}/legislator/{legislator_id}
+-	Return vote on specific bill and legistator.
+
+
+
+
