@@ -10,44 +10,51 @@
             <li>bill/{bill_id}</li>
             <li>bills/</li> 
             <li>bills/result/{result}</li>
-            <li>bills/votes/marginal/{difference}</li>
-            <ul>
-                <li>e.g. bills/votes/marginal/5</li>
-                <li>Return bills that had a diff of 5 or less in yea/nays</li>
-            </ul>
-            <li>bills/maxVotes/{vote}/{count}</li>
-            <ul>
-                <li>e.g. bills/maxVotes/NV/10</li>
-                <li>Return bills with no more than 10 "no votes"</li>
-            </ul>
-            <li>bills/minVotes/{vote}/{count}</li>
-            <ul>
-                <li>e.g. bills/minVotes/nay/10</li>
-                <li>Return bills with at least 10 nays</li>
-            </ul>
+            <li>bills/votes/marginal/{difference}
+                <ul>
+                    <li>e.g. bills/votes/marginal/5</li>
+                    <li>Return bills that had a diff of 5 or less in yea/nays</li>
+                </ul>
+            </li>
+            <li>bills/maxVotes/{vote}/{count}
+                <ul>
+                    <li>e.g. bills/maxVotes/NV/10</li>
+                    <li>Return bills with no more than 10 "no votes"</li>
+                </ul>
+            </li>
+            <li>bills/minVotes/{vote}/{count}
+                <ul>
+                    <li>e.g. bills/minVotes/nay/10</li>
+                    <li>Return bills with at least 10 nays</li>
+                </ul>
+            </li>
             <li>bills/legislator/{id}/vote/{vote}</li>
-            <li>legislator/{id}/bills/vote/{vote}</li>
-            <ul>
-                <li>e.g.: legislator/2/bills/vote/yea</li>
-                <li>Return bills that legislator 2 voted yea on.</li>
-            </ul>
+            <li>legislator/{id}/bills/vote/{vote}
+                <ul>
+                    <li>e.g.: legislator/2/bills/vote/yea</li>
+                    <li>Return bills that legislator 2 voted yea on.</li>
+                </ul>
+            </li>
             <li>bills/legislator/{id}/vote/{vote}/party/{party_id}</li>
-            <li>legislator/{id}/bills/vote/{vote}/party/{party_id}</li>
-            <ul>
-                <li>e.g. bills/legislator/5/votes/yay/party/republican</li>
-                <li>Return Republican bills that legislator 5 voted yay on.</li>
-            </ul>
+            <li>legislator/{id}/bills/vote/{vote}/party/{party_id}
+                <ul>
+                    <li>e.g. bills/legislator/5/votes/yay/party/republican</li>
+                    <li>Return Republican bills that legislator 5 voted yay on.</li>
+                </ul>
+            </li>
             <li>bills/legislator/{id}/vote/{vote}/result/{result}</li>
-            <li>legislator/{id}/bills/vote/{vote}/result/{result}</li>
-            <ul>
-                <li>e.g. legislator/5/votes/yay/result/passed</li>
-                <li>Return Passed bills that legislator 5 voted yay on.</li>
-            </ul>
+            <li>legislator/{id}/bills/vote/{vote}/result/{result}
+                <ul>
+                    <li>e.g. legislator/5/votes/yay/result/passed</li>
+                    <li>Return Passed bills that legislator 5 voted yay on.</li>
+                </ul>
+            </li>
             <li>bills/legislator/{id}/sponsored</li>
-            <li>legislator/{id}/bills/sponsored</li>
-            <ul>
-                <li>Return bills sponsored or co-sponsored by legislator.
-            </ul>
+            <li>legislator/{id}/bills/sponsored
+                <ul>
+                    <li>Return bills sponsored or co-sponsored by legislator.
+                </ul>
+            </li>
         </ul>
 
         <h2>Search legislators</h2>
@@ -57,41 +64,48 @@
             <li>legislators/house/</li>
             <li>legislators/senate/</li>
             <li>legislators/party/{party}</li>
-            <li>legislators/maxVotes/{vote}/{count}</li>
-            <ul>
-                <li>e.g. legislators/maxVotes/NV/10</li>
-                <li>Return legislators that have no more than 10 "no votes"</li>
-            </ul> 
-            <li>legislators/minVotes/{vote}/{count}</li>
-            <ul>
-                <li>e.g. legislators/minVotes/NV/10</li>
-                <li>Return legislators that have at least 10 "no votes"</li>
-            </ul>
+            <li>legislators/maxVotes/{vote}/{count}
+                <ul>
+                    <li>e.g. legislators/maxVotes/NV/10</li>
+                    <li>Return legislators that have no more than 10 "no votes"</li>
+                </ul> 
+            </li>
+            <li>legislators/minVotes/{vote}/{count}
+                <ul>
+                    <li>e.g. legislators/minVotes/NV/10</li>
+                    <li>Return legislators that have at least 10 "no votes"</li>
+                </ul>
+            </li>
             <li>legislators/bill/{bill_id}/vote/{vote}</li>
-            <li>bill/{bill_id}/legislators/vote/{vote}</li>
-            <ul>
-                <li>e.g. bill/3/legislators/vote/nay</li>
-                <li>Return legislators who voted nay on Bill 3.</li>
-            </ul>
-            <li>legislator/{id}/cosponsors</li>
-            <ul>
-                <li>Returns legislators who have co-sponsored any bill with given legislator.</li>
-            </ul>
+            <li>bill/{bill_id}/legislators/vote/{vote}
+                <ul>
+                    <li>e.g. bill/3/legislators/vote/nay</li>
+                    <li>Return legislators who voted nay on Bill 3.</li>
+                </ul>
+            </li>
+            <li>legislator/{id}/cosponsors
+                <ul>
+                    <li>Returns legislators who have co-sponsored any bill with given legislator.</li>
+                </ul>
+            </li>
         </ul>
         <h2>Search votes</h2>
         <ul>
-            <li>vote/bill/{bill_id}</li>
-            <ul>
-                <li>Return all votes (in House and Senate) for a bill.</li>
-            </ul>
-            <li>vote/legislator/{legislator_id}</li>
-            <ul>
-                <li>Return all votes on any bills for a legislator.</li>
-            </ul>
+            <li>vote/bill/{bill_id}
+                <ul>
+                    <li>Return all votes (in House and Senate) for a bill.</li>
+                </ul>
+            </li>
+            <li>vote/legislator/{legislator_id}
+                <ul>
+                    <li>Return all votes on any bills for a legislator.</li>
+                </ul>
+            </li>
             <li>vote/legislator/{legislator_id}/bill/{bill_id}</li>
-            <li>vote/bill/{bill_id}/legislator/{legislator_id}</li>
-            </ul>
-                <li>Return vote on specific bill and legistator.</li>
-            </ul>
+            <li>vote/bill/{bill_id}/legislator/{legislator_id}
+                <ul>
+                    <li>Return vote on specific bill and legistator.</li>
+                </ul>
+            </li>
         </ul>
 </html>
