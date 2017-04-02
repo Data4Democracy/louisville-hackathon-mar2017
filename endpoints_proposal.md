@@ -1,11 +1,14 @@
-Proposed Endpoints
+#Current Live Server
+https://derby-pie-politics.herokuapp.com (root redirects here)
+Clickable links below are live, others still pending.
 ==================
+#Endpoint Descriptors:
 
-Search bills
+##Search bills
 ------------
-bill/{bill_id}
+[bill/{bill_id}](https://derby-pie-politics.herokuapp.com/bill/ga2017HB003)
 
-bills/
+[bills/](https://derby-pie-politics.herokuapp.com/bills/)
 
 bills/result/{result}
 
@@ -41,15 +44,17 @@ legislator/{id}/bills/sponsored
 -	Return bills sponsored or co-sponsored by legislator.
 
 
-Search legislators
+##Search legislators
 ------------------
-legislator/{id}/
+[legislator/{id}](https://derby-pie-politics.herokuapp.com/legislator/40)
 
-legislators/
+[legislators/](https://derby-pie-politics.herokuapp.com/legislators/)
 
 legislators/house/
 
 legislators/senate/
+
+[legislators/party](https://derby-pie-politics.herokuapp.com/legislators/party/)
 
 legislators/party/{party}
 
@@ -69,14 +74,18 @@ bill/{bill_id}/legislators/vote/{vote}
 legislator/{id}/cosponsors
 -	Returns legislators who have co-sponsored any bill with given legislator.
 
-Find votes
+##Find votes
 ----------
-vote/bill/{bill_id}
+[votes/bill/{bill_id}](https://derby-pie-politics.herokuapp.com/votes/bill/ga2017HB001)
 -	Return all votes (in House and Senate) for a bill.
 
-vote/legislator/{legislator_id}
+[votes/legislator/{legislator_id}](https://derby-pie-politics.herokuapp.com/votes/legislator/40)
 -	Return all votes on any bills for a legislator.
 
-vote/legislator/{legislator_id}/bill/{bill_id}
-vote/bill/{bill_id}/legislator/{legislator_id}
+[/votes/record/legislator/{legislator_id}](https://derby-pie-politics.herokuapp.com/votes/record/legislator/1)
+- Returns legislator info and condensed voting record on bills grouped by vote type
+
+[vote/legislator/{legislator_id}/bill/{bill_id}](https://derby-pie-politics.herokuapp.com/votes/legislator/40/bill/ga2017HB156)
+[vote/bill/{bill_id}/legislator/{legislator_id}](https://derby-pie-politics.herokuapp.com/votes/bill/ga2017HB156/legislator/40/)
 -	Return vote on specific bill and legistator.
+
