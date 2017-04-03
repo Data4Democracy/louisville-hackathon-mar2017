@@ -105,6 +105,8 @@ myright <- function(x, n) {
   names(Bills)[3] <- c('bill_id')
   Bills <- Bills[,c(3,1,2)]
   Bills <- Bills[Bills$BillNumber!= '',]
+                                        
+  Bills <- select(Votes, bill_id, BillNumber = BillName) %>% mutate(SessionID = 'ga2017') %>% unique()
   dbWriteTable(con, name="Bills", value=Bills, overwrite = TRUE, quote=FALSE, row.names=FALSE);
 
 # Sponsors
