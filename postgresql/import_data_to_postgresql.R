@@ -1,7 +1,8 @@
 library(tidyverse)
+library(stringr)
 library(RPostgreSQL)
 
-pw <- {'SETPASSWORDHERE'}
+pw <- {'illfatedcoppertruck'}
 drv <- dbDriver('PostgreSQL')
 con <- dbConnect(drv,
                  dbname = 'data4lou', 
@@ -22,12 +23,11 @@ myright <- function(x, n) {
   head(Legislators)
   Legislators$Initial.Name <- as.character(Legislators$Initial.Name)
   Legislators[which(Legislators$LastUnique=='Johnson DJ'),]$Initial.Name <- 'DJ. Johnson'
-  dbWriteTable(con, name='Legislators', value=Legislators, overwrite = TRUE, quote=FALSE, row.names = FALSE);
+  
 
 # Process Legislature
   Legislature <- read.csv(url('https://raw.githubusercontent.com/Data4Democracy/louisville-hackathon-mar2017/master/Legislature.csv'))
   head(Legislature)
-  dbWriteTable(con, name='Legislature', value=Legislature, overwrite = TRUE, quote=FALSE, row.names = FALSE);
   
 # Process House Votes
   HouseVotes <- read.csv(url('https://raw.githubusercontent.com/Data4Democracy/louisville-hackathon-mar2017/master/House_Votes.csv'))
@@ -47,7 +47,6 @@ myright <- function(x, n) {
   x <- merge(House_Votes, Legislators, by.x=c('MemberName'), by.y=c('LastUnique'), all.x=TRUE)
   unique(x[is.na(x$Full.Name),'MemberName'])
   House_Votes <- x[,c('bill_id', 'legislator_id', 'MemberName', 'BillName', 'Vote')]
-  dbWriteTable(con, name='House_Votes', value=House_Votes, overwrite = TRUE, quote=FALSE, row.names = FALSE);
   
 # Process Senate Votes
   SenateVotes <- read.csv(url('https://raw.githubusercontent.com/Data4Democracy/louisville-hackathon-mar2017/master/Senate_Votes.csv'))
@@ -83,32 +82,29 @@ myright <- function(x, n) {
   x <- merge(Senate_Votes, Legislators, by.x=c('MemberName'), by.y=c('LastUnique'), all.x=TRUE)
   unique(x[is.na(x$Full.Name),'MemberName'])
   Senate_Votes <- x[,c('bill_id', 'legislator_id', 'MemberName', 'BillName', 'Vote')]
-  dbWriteTable(con, name='Senate_Votes', value=Senate_Votes, overwrite = TRUE, quote=FALSE, row.names = FALSE);
   
   SenateVotes[SenateVotes$Name=='Adams','HB281']  # Should be 'Nay'
   
 # Votes
   Votes <- rbind(House_Votes, Senate_Votes);
   unique(Votes$Vote)
-  Votes <- mutate(Votes, Vote = map_chr(Vote, function(i) ifelse(i == 'YAY','YEA',i)))
-  dbWriteTable(con, name='Votes', value=Votes, overwrite = TRUE, quote=FALSE, row.names = FALSE)
+  # Votes <- mutate(Votes, Vote = map_chr(Vote, function(i) ifelse(i == 'YAY','YEA',i)))
+  # Same as:  
+  Votes[which(Votes$Vote=='YAY'),]$Vote <- 'YEA'
+  Votes <- unique(Votes)
   
 # Process Session
   Session <- read.csv(url('https://raw.githubusercontent.com/Data4Democracy/louisville-hackathon-mar2017/master/Session.csv'))
   head(Session)
   names(Session)[1] <- c('session_id')
-  dbWriteTable(con, name='Session', value=Session, overwrite = TRUE, quote=FALSE, row.names = FALSE);
   
 # Bills
-  Bills <- read.csv('c:/Chip/data4lou/bill_table.csv')
   Bills <- read.csv(url('https://raw.githubusercontent.com/chipmonkey/louisville-hackathon-mar2017/master/bill_table.csv'))
   names(Bills)[3] <- c('bill_id')
   Bills <- Bills[,c(3,1,2)]
   Bills <- Bills[Bills$BillNumber!= '',]
-                                        
   Bills <- select(Votes, bill_id, BillNumber = BillName) %>% mutate(SessionID = 'ga2017') %>% unique()
-  dbWriteTable(con, name="Bills", value=Bills, overwrite = TRUE, quote=FALSE, row.names=FALSE);
-
+  
 # Sponsors
   HouseSponsors <- read.csv(url('https://raw.githubusercontent.com/Data4Democracy/louisville-hackathon-mar2017/master/scraped-ky-bill-sponsor-csv/house_sponsors.csv'))
   HouseSponsors$sponsors <- as.character(HouseSponsors$sponsors)
@@ -147,11 +143,46 @@ myright <- function(x, n) {
   Sponsors <- rbind(ssx[,c('legislator_id', 'bill_id', 'bill', 'sponsors')],
                     hsx[,c('legislator_id', 'bill_id', 'bill', 'sponsors')])
   
-  Sponsors <- sponsors[!is.na(sponsors$sponsors),]
-  dbWriteTable(con, name='Sponsors', value=Sponsors, overwrite = TRUE, quote=FALSE, row.names = FALSE);
+  Sponsors <- Sponsors[!is.na(Sponsors$sponsors),]
   
   
+  #  Post Processing from rkahne
+  legislators_rkahne <- select(Legislators, legislator_id, Initial.Name) %>% 
+    bind_rows(tibble(legislator_id = c(6,55,96,63,117,6,37,113, 10), 
+                     Initial.Name = c('R. Benvenuti III','DJ Johnson','B. Reed',
+                                      'S. LeeHB 16', 'J. Stewart III', 'R. Benevenuti III',
+                                      'J. Gooch Jr.','J. Sims Jr', 'G. Brown Jr')))
   
+  Sponsors_rkahne <- bind_rows(HouseSponsors, SenateSponsors) %>% 
+    filter(!is.na(bill)) %>% 
+    mutate(
+      bill_id = map_chr(bill, function(i){
+        num <- str_extract_all(i,'[\\d]') %>% unlist() %>% paste0(collapse = '')
+        if(str_length(num) == 1) num <- paste0('00',num)
+        else if(str_length(num) == 2) num <- paste0('0',num)
+        else num <- num
+        paste0('ga2017',str_sub(i,1,2),num)
+      }),
+      legislator_id = map_dbl(sponsors, function(i){
+        if(is.na(i)) NA
+        else legislators_rkahne$legislator_id[which(legislators_rkahne$Initial.Name == i)]
+      })
+    )
+  Sponsors_rkahne <- Sponsors_rkahne[,c(4,3,1,2)]
+  write.csv(Sponsors, 'sponsors.csv', row.names = FALSE)
+  write.csv(Sponsors_rkahne, 'sponsors_rkahne.csv', row.names = FALSE)
+
+# Overwrite Database
+dbWriteTable(con, name='Legislators', value=Legislators, overwrite = TRUE, quote=FALSE, row.names = FALSE);
+dbWriteTable(con, name='Legislature', value=Legislature, overwrite = TRUE, quote=FALSE, row.names = FALSE);
+dbWriteTable(con, name='House_Votes', value=House_Votes, overwrite = TRUE, quote=FALSE, row.names = FALSE);
+dbWriteTable(con, name='Senate_Votes', value=Senate_Votes, overwrite = TRUE, quote=FALSE, row.names = FALSE);
+dbWriteTable(con, name='Votes', value=Votes, overwrite = TRUE, quote=FALSE, row.names = FALSE)
+dbWriteTable(con, name='Session', value=Session, overwrite = TRUE, quote=FALSE, row.names = FALSE);
+dbWriteTable(con, name="Bills", value=Bills, overwrite = TRUE, quote=FALSE, row.names=FALSE);
+dbWriteTable(con, name='Sponsors', value=Sponsors, overwrite = TRUE, quote=FALSE, row.names = FALSE);
+
+# Reread the database (for validation testing, if you like)
 myBills <- dbReadTable(con, 'Bills')
 myHouse_Votes <- dbReadTable(con, 'House_Votes')
 myLegislators <- dbReadTable(con, 'Legislators')
@@ -161,6 +192,7 @@ mySession <- dbReadTable(con, 'Session')
 mySponsors <- dbReadTable(con, 'Sponsors')
 myVotes <- dbReadTable(con, 'Votes')
 
+# Save to CSV files
 write.csv(myBills, 'exports\Bills.csv', row.names = FALSE)
 write.csv(myHouse_Votes, 'exports/House_Votes.csv', row.names = FALSE)
 write.csv(myLegislators, 'exports\Legislators.csv', row.names = FALSE)
@@ -169,6 +201,3 @@ write.csv(mySenate_Votes, 'exports\Senate_Vote.csv', row.names = FALSE)
 write.csv(mySession, 'exports\Session.csv', row.names = FALSE)
 write.csv(mySponsors, 'exports\Sponsors.csv', row.names = FALSE)
 write.csv(myVotes, 'exports\Votes.csv', row.names = FALSE)
-
-
-
