@@ -37,6 +37,7 @@ myright <- function(x, n) {
   House_Votes$Vote <- toupper(House_Votes$Vote)
   House_Votes$session_id <- 'ga2017'
   House_Votes$BillName <- paste0(substr(House_Votes$BillName,1,2), myright(paste0('0000', substr(House_Votes$BillName,3,99)),3))
+  House_Votes$BillName <- toupper(House_Votes$BillName)
   House_Votes$bill_id <- paste0(House_Votes$session_id, House_Votes$BillName);
   House_Votes$MemberName <- as.character(House_Votes$MemberName)
   House_Votes[which(House_Votes$MemberName=='Harris'),]$MemberName <- 'Harris C'
@@ -60,6 +61,7 @@ myright <- function(x, n) {
   
   Senate_Votes$BillName <- gsub("[[:punct:]]", "", Senate_Votes$BillName)
   Senate_Votes$BillName <- gsub("_", "", Senate_Votes$BillName)
+  Senate_Votes$BillName <- toupper(Senate_Votes$BillName)
   Senate_Votes$BillName <- paste0(substr(Senate_Votes$BillName,1,2), myright(paste0('0000', substr(Senate_Votes$BillName,3,99)),3))
   
   Senate_Votes$session_id <- 'ga2017'
@@ -105,6 +107,7 @@ myright <- function(x, n) {
   Bills <- Bills[Bills$BillNumber!= '',]
   Bills <- select(Votes, bill_id, BillNumber = BillName) %>% mutate(SessionID = 'ga2017') %>% unique()
   
+  
 # Sponsors
   HouseSponsors <- read.csv(url('https://raw.githubusercontent.com/Data4Democracy/louisville-hackathon-mar2017/master/scraped-ky-bill-sponsor-csv/house_sponsors.csv'))
   HouseSponsors$sponsors <- as.character(HouseSponsors$sponsors)
@@ -147,35 +150,35 @@ myright <- function(x, n) {
   
   
   #  Post Processing from rkahne
-  legislators_rkahne <- select(Legislators, legislator_id, Initial.Name) %>% 
-    bind_rows(tibble(legislator_id = c(6,55,96,63,117,6,37,113, 10), 
-                     Initial.Name = c('R. Benvenuti III','DJ Johnson','B. Reed',
-                                      'S. LeeHB 16', 'J. Stewart III', 'R. Benevenuti III',
-                                      'J. Gooch Jr.','J. Sims Jr', 'G. Brown Jr')))
+  # legislators_rkahne <- select(Legislators, legislator_id, Initial.Name) %>% 
+  #   bind_rows(tibble(legislator_id = c(6,55,96,63,117,6,37,113, 10), 
+  #                    Initial.Name = c('R. Benvenuti III','DJ Johnson','B. Reed',
+  #                                     'S. LeeHB 16', 'J. Stewart III', 'R. Benevenuti III',
+  #                                     'J. Gooch Jr.','J. Sims Jr', 'G. Brown Jr')))
+  # 
+  # write.csv(legislators_rkahne, 'legislators_rkahne.csv', row.names = FALSE)
+  # write.csv(Legislators, 'Legislators.csv', row.names = FALSE)
   
-  write.csv(legislators_rkahne, 'legislators_rkahne.csv', row.names = FALSE)
-  write.csv(Legislators, 'Legislators.csv', row.names = FALSE)
+  # Sponsors_rkahne <- bind_rows(HouseSponsors, SenateSponsors) %>% 
+  #   filter(!is.na(bill)) %>% 
+  #   mutate(
+  #     bill_id = map_chr(bill, function(i){
+  #       num <- str_extract_all(i,'[\\d]') %>% unlist() %>% paste0(collapse = '')
+  #       if(str_length(num) == 1) num <- paste0('00',num)
+  #       else if(str_length(num) == 2) num <- paste0('0',num)
+  #       else num <- num
+  #       paste0('ga2017',str_sub(i,1,2),num)
+  #     }),
+  #     legislator_id = map_dbl(sponsors, function(i){
+  #       if(is.na(i)) NA
+  #       else legislators_rkahne$legislator_id[which(legislators_rkahne$Initial.Name == i)]
+  #     })
+  #   )
+  # Sponsors_rkahne <- Sponsors_rkahne[,c(4,3,1,2)]
+  # write.csv(Sponsors, 'sponsors.csv', row.names = FALSE)
+  # write.csv(Sponsors_rkahne, 'sponsors_rkahne.csv', row.names = FALSE)
   
-  Sponsors_rkahne <- bind_rows(HouseSponsors, SenateSponsors) %>% 
-    filter(!is.na(bill)) %>% 
-    mutate(
-      bill_id = map_chr(bill, function(i){
-        num <- str_extract_all(i,'[\\d]') %>% unlist() %>% paste0(collapse = '')
-        if(str_length(num) == 1) num <- paste0('00',num)
-        else if(str_length(num) == 2) num <- paste0('0',num)
-        else num <- num
-        paste0('ga2017',str_sub(i,1,2),num)
-      }),
-      legislator_id = map_dbl(sponsors, function(i){
-        if(is.na(i)) NA
-        else legislators_rkahne$legislator_id[which(legislators_rkahne$Initial.Name == i)]
-      })
-    )
-  Sponsors_rkahne <- Sponsors_rkahne[,c(4,3,1,2)]
-  write.csv(Sponsors, 'sponsors.csv', row.names = FALSE)
-  write.csv(Sponsors_rkahne, 'sponsors_rkahne.csv', row.names = FALSE)
-  
-  Sponsors <- Sponsors_rkahne # just use the new logic -- clean this all up later!
+  # Sponsors <- Sponsors_rkahne # just use the new logic -- clean this all up later!
 
 # Overwrite Database
 dbWriteTable(con, name='Legislators', value=Legislators, overwrite = TRUE, quote=FALSE, row.names = FALSE);
