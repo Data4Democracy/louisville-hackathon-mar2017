@@ -2,7 +2,7 @@ library(tidyverse)
 library(stringr)
 library(RPostgreSQL)
 
-pw <- {'illfatedcoppertruck'}
+pw <- {'SETPASSWORDHERE'}
 drv <- dbDriver('PostgreSQL')
 con <- dbConnect(drv,
                  dbname = 'data4lou', 
