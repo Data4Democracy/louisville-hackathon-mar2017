@@ -2,7 +2,7 @@ library(tidyverse)
 library(stringr)
 library(RPostgreSQL)
 
-pw <- {'SETPASSWORDHERE'}
+pw <- {'illfatedcoppertruck'}
 drv <- dbDriver('PostgreSQL')
 con <- dbConnect(drv,
                  dbname = 'data4lou', 
@@ -139,7 +139,7 @@ myright <- function(x, n) {
   ssx$bill_id <- paste0(ssx$session_id, ssx$bill);
   
   hsx$session_id <- 'ga2017'
-  hsx$bill <- paste0(substr(ssx$bill,1,2), myright(paste0('0000', substr(hsx$bill,3,99)),3))
+  hsx$bill <- paste0(substr(hsx$bill,1,2), myright(paste0('0000', substr(hsx$bill,3,99)),3))
   hsx$bill_id <- paste0(hsx$session_id, hsx$bill);
   
   
@@ -149,9 +149,9 @@ myright <- function(x, n) {
   Sponsors <- Sponsors[!is.na(Sponsors$sponsors),]
   
   
-  #  Post Processing from rkahne
-  # legislators_rkahne <- select(Legislators, legislator_id, Initial.Name) %>% 
-  #   bind_rows(tibble(legislator_id = c(6,55,96,63,117,6,37,113, 10), 
+   # Post Processing from rkahne
+  # legislators_rkahne <- select(Legislators, legislator_id, Initial.Name) %>%
+  #   bind_rows(tibble(legislator_id = c(6,55,96,63,117,6,37,113, 10),
   #                    Initial.Name = c('R. Benvenuti III','DJ Johnson','B. Reed',
   #                                     'S. LeeHB 16', 'J. Stewart III', 'R. Benevenuti III',
   #                                     'J. Gooch Jr.','J. Sims Jr', 'G. Brown Jr')))
@@ -159,8 +159,8 @@ myright <- function(x, n) {
   # write.csv(legislators_rkahne, 'legislators_rkahne.csv', row.names = FALSE)
   # write.csv(Legislators, 'Legislators.csv', row.names = FALSE)
   
-  # Sponsors_rkahne <- bind_rows(HouseSponsors, SenateSponsors) %>% 
-  #   filter(!is.na(bill)) %>% 
+  # Sponsors_rkahne <- bind_rows(HouseSponsors, SenateSponsors) %>%
+  #   filter(!is.na(bill)) %>%
   #   mutate(
   #     bill_id = map_chr(bill, function(i){
   #       num <- str_extract_all(i,'[\\d]') %>% unlist() %>% paste0(collapse = '')
