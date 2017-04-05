@@ -1,11 +1,16 @@
-#Current Live Server
+# Current Live Server
+
 https://derby-pie-politics.herokuapp.com (root redirects here)
 Clickable links below are live, others still pending.
-==================
-#Endpoint Descriptors:
 
-##Search bills
-------------
+***
+
+# Endpoint Descriptors:
+
+## Search bills
+
+***
+
 [bill/{bill_id}](https://derby-pie-politics.herokuapp.com/bill/ga2017HB003)
 
 [bills/](https://derby-pie-politics.herokuapp.com/bills/)
@@ -44,8 +49,10 @@ legislator/{id}/bills/sponsored
 -	Return bills sponsored or co-sponsored by legislator.
 
 
-##Search legislators
-------------------
+## Search legislators
+
+***
+
 [legislator/{id}](https://derby-pie-politics.herokuapp.com/legislator/40)
 
 [legislators/](https://derby-pie-politics.herokuapp.com/legislators/)
@@ -74,8 +81,10 @@ bill/{bill_id}/legislators/vote/{vote}
 legislator/{id}/cosponsors
 -	Returns legislators who have co-sponsored any bill with given legislator.
 
-##Find votes
-----------
+## Find votes
+
+***
+
 [votes/bill/{bill_id}](https://derby-pie-politics.herokuapp.com/votes/bill/ga2017HB001)
 -	Return all votes (in House and Senate) for a bill.
 
